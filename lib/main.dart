@@ -292,8 +292,8 @@ class HomePageState extends State<HomePage>{
                var map = {
                  'phone' : phone,
                  'message': message,
-                 'access_id':"AKIAYSLDQVJHQXTZ7H73",
-                 'access_key':"GRi6F7Efvpofg+El7Hioj+KrnTAFnn0l++V1qaJm"
+                 'access_id':{ACCESS_ID},
+                 'access_key':{ACCESS_KEY}
                };
               var json_data = jsonEncode(map);
               var resp = await http.post("http://singham.pythonanywhere.com/send",
